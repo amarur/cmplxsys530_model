@@ -1,6 +1,6 @@
-# Model Proposal for _[Project Name]_
+# Model Proposal for A SIR-based Model of the Spread of Political Misinformation through Social Networks
 
-_Your Name_
+Anant Marur
 
 * Course ID: CMPLXSYS 530,
 * Course Title: Computer Modeling of Complex Systems
@@ -13,18 +13,18 @@ _Your Name_
 ### Goal 
 *****
  
-_Provide a short, 1-3 sentence description of the goal of your model_
+The model aims to provide insight into how unreliable information propagates throughout a social network. Specifically, the model aims to emulate how unreliable publications harness the willingness of agents to believe political content shared by users with similar political leanings. This is an issue that is becoming increasingly prevalent with the rising importance of social media in information exchange, especially in the realm of politics.
 
 &nbsp;  
 ### Justification
 ****
-_Short explanation on why you are using ABM_
+The relevant agents in this model are not those agents who derive their information primarily from a centralized, reputable news source. They are agents who primarily are fed their information by other agents, and following this trail upstream often yields what are clearly objectively untrustworthy news sources. What makes these news sources credible is no longer constitutive of the sources themselves – credibility is instead given by the ‘sharer’ of the information. It is due to this ‘network’ of credibility, that often creates contradictory perceptions of authenticity depending on how one comes across a specific source, that agent based modeling bubbles to the top as the best approach.
 
 &nbsp; 
 ### Main Micro-level Processes and Macro-level Dynamics of Interest
 ****
 
-_Short overview of the key processes and/or relationships you are interested in using your model to explore. Will likely be something regarding emergent behavior that arises from individual interactions_
+Politically, social media often has an echo-chamber effect. Every agent, has their own customized stream of information being fed to them on social media. Moreover, this stream often creates a feedback loop back into their biases, which is one of the reasons politics is becoming so heavily polarized.
 
 &nbsp; 
 
