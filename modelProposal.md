@@ -38,15 +38,6 @@ Consequently, I expect to see misinformation spread extremely quickly throughout
 
 The environment of the model consists of a network connecting the agents (which can be thought of as nodes in an undirected graph). The environment is negligible other than the connections between the nodes, as the agents are not moving, and all other external effects on agents’ behavior are controlled by the global variables. 
 
-
-
-```python
-# Include first pass of the code you are thinking of using to construct your environment
-# This may be a set of "patches-own" variables and a command in the "setup" procedure, a list, an array, or Class constructor
-# Feel free to include any patch methods/procedures you have. Filling in with pseudocode is ok! 
-# NOTE: If using Netlogo, remove "python" from the markdown at the top of this section to get a generic code block
-```
-
 &nbsp; 
 
 ### 2) Agents
@@ -58,26 +49,16 @@ The environment of the model consists of a network connecting the agents (which 
 
 	- _Classification_: Each agent is classified as a Spreader, Ignorant, or Stifler. An agent’s classification is the primary influence on its behavior in interactions with other agents. 
 		1. _Spreaders_: As the name implies, they spread information. They have the following interactions:
-			a. Contact with a Spreader: nothing
-			b. Contact with an Ignorant: Either:
-				i. Convert them to a Spreader with a probability equal to the Spreading Rate (global variable).
-				ii. Convert them to to a Stifler with a probability equal to the Refusing Rate (global variable).
+			- Contact with a Spreader: nothing
+			- Contact with an Ignorant: Either:
+				- Convert them to a Spreader with a probability equal to the Spreading Rate (global variable).
+				- Convert them to to a Stifler with a probability equal to the Refusing Rate (global variable).
 		2. _Ignorants_: Those who have not internalized a rumor. They have no effect on whoever they interact with.
 		3. _Stiflers_: Those who actively stop the spread of misinformation.
-			a. Contact with a Stifler: Turn into a Stifler themselves with a probability equal to the Stifling Rate (global variable).
+			- Contact with a Stifler: Turn into a Stifler themselves with a probability equal to the Stifling Rate (global variable).
 
 * __Methods__:The only method for agents in this model is interaction with neighbors, the specifics of which are explained above.
 
-
-
-
-
-```python
-# Include first pass of the code you are thinking of using to construct your agents
-# This may be a set of "turtle-own" variables and a command in the "setup" procedure, a list, an array, or Class constructor
-# Feel free to include any agent methods/procedures you have so far. Filling in with pseudocode is ok! 
-# NOTE: If using Netlogo, remove "python" from the markdown at the top of this section to get a generic code block
-```
 
 &nbsp; 
 
